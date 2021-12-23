@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100&display=swap');
+
+.App{
+  font-family: 'Saira Extra Condensed', sans-serif;
+  max-width: 100%;
+  overflow: hidden;
+  color:white;
+}
+
+.row{
+  min-width: 100%;
+  padding:5%;
+  min-height: 100vh;
+  align-items: center;
+}
+
+#row1{
+  background-image: url("images/background1.png");
+  background-position: center;
+  background-size: cover;
+}
+
+#title1{
+  font-size: 55px;
+}
+
+#desc1{
+  font-size:28px;
+}
+
+#title2{
+  font-size:45px;
+}
+
+#desc2{
+  font-size:25px;
+}
+
+#btn1{
+  width:220px;
+  height:55px;
+  background-color: white;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  font-size:25px;
+  outline: none;
+  border: none;
+  border-radius: 0px;
+  padding-top: 10px;
+  transition-delay: 0.1s;
+  transition-duration: 0.3s;
+  &:hover {
+    color:white;
+    background-color: black;
+    border:2.5px solid white;
+    padding-top: 7px;
+    
+    &:before {
+      opacity: 1;
+      text-indent: 0px;
+    }
+  }
+}
+
+nav{
+  width:100%;
+  height:70px;
+  padding:20px;
+}
+
+.icon{
+  width:85px;
+  height:35px;
+  margin-left:12%;
+  background-image: url("images/logo.png");
+  background-size: cover;
+}
+
+ul{
+  display: flex;
+  margin-right: 0px;
+  padding-right: 100px;
+  justify-content: flex-end;
+}
+
+ul > li{
+  margin-left:22%;
+  color: black;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+ul > li > a {
+  font-size:22px;
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+  cursor: pointer;
+  &:hover{
+    color: black;
+  }
+}
+
+#row2{
+  background-image: url("images/background2.png");
+  background-size: cover;
+  background-position: center;
+  justify-content: space-between;
+  text-align: right;
+}
+
+#row3{
+  color: black;
+  background-size: cover;
+  background-position: center;
+  justify-content: space-between;
+  text-align: left;
+  background-color: #DFDFDF;
+}
+
+#title3{
+  font-size:45px;
+}
+
+#desc3{
+  font-size:25px;
+}
+
+#img3{
+  max-width:700px;
+  height:365px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("images/background3.png");
+}
+
+.footer{
+  width: 100%;
+  height:200px;
+  background-color: #383838;
+  padding:25px 50px 25px 50px;
+}
+
+@media (max-width:1000px) {
+  #row3{
+    display: grid;
+    grid-template-areas: "head"
+                         "body";
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width:650px) {
+  .icon{
+    display: none;
+  }
+  .footer{
+    display: none;
+  }
+}
