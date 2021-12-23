@@ -1,8 +1,6 @@
-import React, { useState, useEffect } from 'react'
-import logo from './logo.svg';
+import React from 'react';
 import './App.scss';
 import 'bootstrap/dist/css/bootstrap.css';
-import { Link } from 'react-scroll';
 import Home from './components/home';
 import Reliable from './components/reliable';
 import Power from './components/power';
